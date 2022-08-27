@@ -5,7 +5,14 @@
     <a [title]=" 'Détailles du ' + produit.name">{{produit.name}}</a></h3>
     <p *ngIf="produit.description">Description: {{produit.description}}</p> <!-- Si le produit a une description, l'affiché -->
     <button type="button" (click)="share()">Partager</button>
+    <!-- Alerte -> product-alert.component -->
+    <app-product-alerts 
+    [produit] = "produit"> <!-- produit provient du component product-alert.
+                                Afin d'utiliser notre html de product-alert, on indique que produit est le produit de notre NgIf -->
+    </app-product-alerts>
 </div>
+
+
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.

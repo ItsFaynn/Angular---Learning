@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { produits } from "../products";
+import { Produit } from "../products";
 
 @Component({
   selector: 'app-product-alerts',
@@ -9,6 +9,8 @@ import { produits } from "../products";
 export class ProductAlertsComponent implements OnInit {
 
   constructor() { }
+
+  @Input() produit! : Produit; // produit -> Classe Produit
 
   ngOnInit(): void {
   }
