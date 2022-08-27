@@ -12,7 +12,12 @@ export class ProductListComponent {
 
   share() { // Méthode permettant d'afficher un pop up indiquant que le produit a été partagé
     window.alert('Le produit a été partagé avec succès!');
-  }
+  };
+
+  onNotifier(){
+    window.alert("Vous serez avertis lorsque le produit sera en rabais.");
+  };
+  
 }
 
 

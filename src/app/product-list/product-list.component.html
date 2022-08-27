@@ -7,8 +7,12 @@
     <button type="button" (click)="share()">Partager</button>
     <!-- Alerte -> product-alert.component -->
     <app-product-alerts 
-    [produit] = "produit"> <!-- produit provient du component product-alert.
-                                Afin d'utiliser notre html de product-alert, on indique que produit est le produit de notre NgIf -->
+    [produit] = "produit"     
+    (notifier)="onNotifier()">
+                               <!-- produit provient du component product-alert.
+                                Afin d'utiliser notre html de product-alert, on indique que produit est le produit de notre NgIf --> 
+
+    
     </app-product-alerts>
 </div>
 
