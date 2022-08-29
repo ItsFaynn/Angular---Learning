@@ -1,1 +1,12 @@
-<p>product-details works!</p>
+<h2>Détails du produit</h2>
+
+
+<div *ngIf="produit">
+  <h3>{{produit.name}}</h3>
+  <h4>{{produit.price | currency}}</h4>
+  <p>{{produit.description}}</p>
+
+</div>
+
+
+<!-- The line, <h4>{{ product.price | currency }}</h4>, uses the currency pipe to transform product.price from a number to a currency string. A pipe is a way you can transform data in your HTML template. For more information about Angular pipes, see Pipes. -->
